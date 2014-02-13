@@ -17,7 +17,7 @@ after_script:
 - travis-artifacts upload --path build/html
 env:
   global:
-  - ARTIFACTS_S3_BUCKET=plonetheme-bootstrap
+  - ARTIFACTS_S3_BUCKET=plonetheme.onegov
   - SPHINX_PROJECT=plonetheme.onegov
   - SPHINX_COPYRIGHT=4teamwork
   - ROBOT_CONFIGURE_PACKAGES=plone.app.dexterity,plonetheme.onegov
