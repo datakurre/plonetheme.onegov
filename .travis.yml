@@ -12,7 +12,7 @@ before_script:
 - gem install --version 0.8.9 faraday
 - gem install travis-artifacts
 script:
-- bin/sphinx-build -b html src/collective.themetest/source build/html
+- bin/sphinx-build -b html src/plone.themepreview/source build/html
 after_script:
 - travis-artifacts upload --path build/html
 env:
