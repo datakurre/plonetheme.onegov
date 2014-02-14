@@ -15,6 +15,7 @@ script:
 - bin/sphinx-build -b html src/plone.themepreview/source build/html
 after_script:
 - travis-artifacts upload --path build/html
+- travis-artifacts upload --target-path latest --path build/html
 env:
   global:
   - ARTIFACTS_S3_BUCKET=plonetheme.onegov
